@@ -1,12 +1,12 @@
 # libarary-management
-1.String bHql = "SELECT book FROM Book book WHERE book.publicationYear > :year";
-List<Book> books = session.createQuery(bHql)
+1.String Hql = "SELECT book FROM Book book WHERE book.publicationYear > :year";
+List<Book> books = session.createQuery(Hql)
         .setParameter("year", 2010)
         .getResultList();
 
 
-2.String bHql = "UPDATE Book book SET book.price = book.price * 1.1 WHERE book.author = :author";
-  int updatedCount = session.createQuery(bHql)
+2.String Hql = "UPDATE Book book SET book.price = book.price * 1.1 WHERE book.author = :author";
+  int updatedCount = session.createQuery(Hql)
         .setParameter("author", author)
         .executeUpdate();
 
